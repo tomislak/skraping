@@ -23,7 +23,7 @@ for url in (url_danas, url_sutra):
 
     poruka += div.get_text()
 
-return {
-    'statusCode': 200,
-    'body': json.dumps(poruka)
-}
+    return {
+        'statusCode': 200,
+        'body': json.dumps(poruka)
+    }
