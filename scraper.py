@@ -15,10 +15,12 @@ for url in (url_danas, url_sutra):
 
     div_datum = soup.find('h3')
 
-    print("=====================================")
-    print(div_datum.text)
-    print("=====================================")
+    poruka = "====================================="
+    poruka += div_datum.text
+    poruka += "====================================="
 
     div = soup.find('div', class_='radwrap')
 
-    print(div.get_text())
+    poruka += div.get_text()
+
+print (poruka)
